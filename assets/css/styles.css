@@ -72,6 +72,7 @@ body{
     background: linear-gradient(to left, #3b6978, #84a9ac);
     outline: none;
     letter-spacing: 3px;
+    margin-top: 20px;
 }
 
 .btn:hover{
@@ -90,4 +91,12 @@ body{
     100%{
 		transform: translatey(0px);
     }
+}
+
+
+@media only screen and (max-width: 600px){
+    .text__404 > p{
+        font-size: 30px;
+    }
+
 }
