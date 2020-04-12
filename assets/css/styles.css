@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Comic+Neue&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* -----------------------------HEADER-----------------------------------*/
+.header{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(#18b0b0, #116979);
+    display: flex;
+    align-items: center;
+}
+
+.header__img{
+    width: 200px;
+    margin-left: 20px;
+}
+
+/* ----------------------------CONTENIDO-----------------------------------*/
+
+.text__container{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text{
+    text-align: center;
+}
+
+.text__404{
+    font-size: 100px;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    color: white;
+    line-height: 0px;
+    transition: all 0.4s ease-in-out;
+    letter-spacing: 3px;
+}
+
+.text__404>h1{
+    transform: translateY(0px);
+    animation: float 6s ease-in-out infinite;
+}
+
+
+.text__404 > p{
+    font-size: 60px;
+}
+
+.btn{
+    font-family: 'Comic Neue', cursive;
+    border: 2px solid white;
+    border-radius: 25px;
+    width: 50%;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to left, #3b6978, #84a9ac);
+    outline: none;
+    letter-spacing: 3px;
+}
+
+.btn:hover{
+    border: 3px solid #116979;
+    box-shadow: 1px 8px 19px 5px black;
+    cursor: pointer;
+}
+
+@keyframes float{
+    0% {
+        transform: translatey(0px);
+    }
+    50%{
+		transform: translatey(-20px); 
+    }
+    100%{
+		transform: translatey(0px);
+    }
+}
